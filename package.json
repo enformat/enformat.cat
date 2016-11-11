@@ -1,7 +1,8 @@
 {
-  "name": "enformat-cat",
-  "version": "0.0.0",
-  "private": true,
+  "name": "enformat.cat-website",
+  "version": "1.0.0",
+  "description": "Corporate website with Node.js on Docker",
+  "main": "server.js",
   "scripts": {
     "start": "node ./bin/www"
   },
