@@ -1,0 +1,612 @@
+/*
+* ENFORMAT.CAT
+* STYLE.CSS
+* 
+*/
+
+    body{
+        font-family: 'gotham_medium';
+        color:#3F3E40;
+        padding:20px 0px 0px 0px; 
+    }
+
+    *{
+        outline: none !important;
+        outline-width:0px !important;
+    }
+
+/*******************************  HEADER STYLES *****************/
+    header{
+        margin-bottom: 7px;
+    }
+
+    header .languages a{
+        color: inherit;
+    }
+
+    header .languages a.active , header .languages a:hover.active{
+        text-decoration: underline;
+    }
+
+    header .logo {
+        margin: 30px 0px 50px 0px;
+    }
+
+    header .logo a {
+        display: block;
+        width: 332px;
+        height: 49px;
+        background: url('../images/logo-enformat.jpg') no-repeat;
+        text-indent: -9999px;
+        margin: auto;
+    }
+
+    header .languages a:hover {
+        text-decoration: none;
+    }
+
+
+    header nav ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header nav ul li {
+            list-style: none;
+            display: inline-block;
+    }
+
+    header nav ul li  a {
+        padding: 10px 15px; //23px;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        font-family: 'gotham_light';
+        font-size: 1.8rem;
+    }
+
+    header nav ul li  a:active, header nav ul li  a:focus {
+        text-decoration: none;
+    }
+
+    header nav ul li  a.last {
+        padding: 10px 21px 10px 23px;
+        margin-right: 0px;
+        padding-right: 12px;
+    }
+
+    header nav ul li  a:hover , header nav ul li  a.active {
+      background: #EEEEEF !important;
+      text-decoration: none !important; 
+    }
+
+    .clear{ clear: both; }
+    .center{ text-align: center; }
+
+    
+
+ /********************************************** CARRUSEL */
+
+.bxslider {
+    padding: 0px;
+}
+
+.bxslider li{
+    height: 467px;
+    text-align: center;
+    list-style: none;
+}
+
+.bx-wrapper .bx-viewport{
+    -webkit-border-top-right-radius: 99px;
+    -moz-border-radius-topright: 99px;
+    border-top-right-radius: 99px;
+    box-shadow: none;
+    border-top:0px; 
+
+}
+
+.bx-wrapper .bx-prev , .bx-wrapper .bx-prev:hover {
+    background: rgba(255, 255, 255, 0.3) url("../images/arrow-left.png") no-repeat scroll center center;
+    display: block;
+}
+
+.bx-wrapper .bx-next , .bx-wrapper .bx-next:hover {
+    background: rgba(255, 255, 255, 0.3) url("../images/arrow-right.png") no-repeat scroll center center;
+    display: block;
+}
+
+.bx-wrapper .bx-controls-direction a{
+    width: 46px;
+    height: 83px;
+    margin-top: -34px;
+    margin-right: 8px;
+}
+
+
+
+.bxslider .caption{
+    color: #fff;
+    font-family: "gotham_bold";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 58px;
+   
+}
+
+.bxslider .btn{
+    border:1px solid #FFF;
+    padding: 10px 30px;
+    text-align: center;
+    color: #FFF;
+    background: none;
+    margin: 20px auto;
+    border-radius: 0px;
+    font-family: 'gotham_light';
+    font-size: 20px;
+}
+
+.bxslider .btn:hover{
+        background: #FFF;
+        color:#004E6E;
+}
+
+/**********************************************************************************************/
+
+.title-seccion{
+    color: #004e6e;
+    font-family: "gotham_bold";
+    font-size: 25px;
+    margin: 45px 0 20px 0;
+    text-align: center;
+}
+
+.who-we-are{
+    display: inline-block;
+    width: 133px;
+    margin-right: 14px;
+}
+
+.who-we-are img{
+    border:1px solid #98A7CD;
+    max-width: 142px;
+    max-height: 129px;
+    margin: auto;
+}
+
+.who-we-are .title {
+    display: inline-table;
+    height: 41px;
+    width: 100%;
+    color: #8D8D8E;
+    font-size: 14px;
+    font-family: 'gotham_medium';
+    letter-spacing: -1px;
+    margin-top: 10px; 
+}
+.who-we-are .title span {
+    vertical-align: middle;
+    color: inherit;
+}
+
+.what-we-do {
+    margin: auto;
+    padding: 0;
+    width: 52%;
+}
+
+.what-we-do li {
+    border-top: 1px dashed #231f20;
+    list-style: outside none none;
+    padding: 10px;
+    text-align: center;
+    font-family: 'gotham_light';
+    font-size: 18px;
+}
+
+.what-we-do li:last-child {
+    border-bottom: 1px dashed #231f20;
+}
+
+.inner-container{
+    width: 54%;
+    margin: auto;
+    font-family: 'gotham_light';
+    font-size: 20px;
+}
+
+.inner-container .who-we-are{
+    margin-top: 20px;
+}
+
+.we-help-to-grow{
+    margin: 20px !important;
+}
+
+.send-cv{
+    font-weight: bold;
+    display: block;
+    margin: 20px 0px;
+    color: #000;
+}
+
+.inner-container .info{
+    font-size: 15px;
+    margin-top: 15px;
+}
+/**************************************************************************** FOOTER ***************/
+ 
+footer{
+    margin-top: 60px;
+    display: block;
+    background: #004E6E;
+} 
+
+footer .contact{
+    background: url('../images/bg-footer.jpg') no-repeat left top;
+    min-height: 400px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+footer .contact .go_top{
+    background: rgba(0, 0, 0, 0) url("../images/go-up.png") repeat scroll 0 0 / cover ;
+    bottom: 41px;
+    display: block;
+    height: 66px;
+    position: absolute;
+    right: 60px;
+    width: 59px;
+}
+
+footer .contact .privacity{
+    bottom: 13px;
+    color: #fff;
+    display: block;
+    height: 66px;
+    position: absolute;
+    right: 204px;
+    width: 141px;
+}
+
+footer .contact .form-contact{
+        width: 276px;
+        height: 494px;      
+}
+
+footer .contact .form-contact h1{
+    margin: auto;
+    border: 5px solid #FFF;
+    color: #FFF;
+    font-family: 'gotham_bold';
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+footer .contact .form-contact input, footer .contact .form-contact textarea{
+    border: 0 none;
+    border-radius: 0;
+    color: #000;
+    font-family: 'gotham_light';
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+footer .contact .form-contact  button{
+    border-radius: 0;
+    color: #000;
+    font-family: 'gotham_bold';
+    padding: 10px 20px;
+    background: #FFF;
+    border: 0px;
+    float: right;
+}
+
+.show-movile{
+    display: none;
+}
+
+/********************** Pages *****************************/
+
+h1.title-page{
+    color: #004E6E;
+    font-size: 58px;
+    font-family: 'gotham_bold';
+    margin: 50px 0px 40px 0px;
+}
+
+.description{
+   font-family: 'gotham_light';
+   font-size: 20px;
+}
+
+.description p{
+    margin-bottom: 20px;
+}
+
+.no-padding{ padding: 0px !important;}
+.no-padding-left { padding-left: 0px !important;}
+.text-aling-left { text-align: left;}
+.box-inner-info{
+    margin: 20px 0px;
+    border: 1px solid #acadd0;
+    font-family: "gotham_light";
+    font-size: 17px;
+    line-height: 140%;
+    padding: 16px 20px;
+    min-height: 224px;
+}
+    
+    .w100{ width: 100% }
+
+    .box1{
+        border: 2px solid #cee5a4;
+        display: inline-table;
+        font-size: 27px;
+        padding: 10px;
+        vertical-align: middle;   
+    }
+
+    .box2{
+        display: inline-table;
+        font-size: 27px;
+        padding: 10px;
+        vertical-align: middle;   
+    }
+
+    .box-blue {
+        width: 100%;
+        background: #8FC8E3;
+        color: #FFF;
+        padding: 14px;
+        border-bottom:2px solid #FFF;
+    }
+
+    .box-bluelight {
+        background: #009DE4 !important;
+    }
+
+    .box-blue.spacing5{
+        margin-top: 5px;
+    }
+
+    .box-darkblue {
+        width: 100%;
+        background: #0D5E8B;
+        color: #FFF;
+        padding: 14px;
+        border-bottom:2px solid #FFF;
+        margin-top: 5px;
+    }
+
+
+     .green-light{
+        width: 100%;
+        background: #8FC8E3;
+        color: #FFF;
+        border-bottom:2px solid #FFF;
+    }
+    
+    .green-light:last-child{
+        border-bottom: 0px;
+    }
+    .green-light{
+        border-bottom: 2 solid #fff;
+        width: 100%;
+        color: #899496;
+        background: #CDE8C9;
+    }
+
+    .border-yellow{
+        border:10px solid #F99502;
+        padding: 0px;
+        margin-top: 5px;
+    }
+
+    .border-white{
+         margin-top: 5px;
+         padding: 0px;
+    }
+
+    .table-containerize{ margin-bottom: 20px; }
+ 
+ 
+ #privacity{
+    background:#808285;
+    padding:10px;
+    color:#FFF;
+    margin-top: -20px;
+    font-weight: normal;
+    margin-bottom:10px;
+    display:none;
+ }  
+ 
+ #privacity a{
+    color:#FFF;
+    text-decoration: underline;
+ }
+ 
+ #privacity .close-privacity{
+    
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration:none;
+ }
+ 
+/*************************** Query Adaptative *********************************/
+
+@media( max-width:768px ){
+    
+    .hide-movile{
+        display:none;
+    }
+    
+    .show-movile{
+        display:block;
+    }
+
+    header .logo {
+        margin: 0px 0 20px;
+    }
+
+    header .logo a {        
+            background-position: center center;
+            background-size:219px;
+
+    }
+
+    .action-menu{
+        background: rgba(0, 0, 0, 0) url("../images/line-menu.jpg") no-repeat scroll 0 0 / cover ;
+        height: 34px;
+        position: absolute;
+        right: 10px;
+        top: 28px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    header nav ul{
+        background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+        float: right;
+        position: absolute;
+        right: -322px;
+        top: 0;
+        z-index: 99999;
+        padding: 13px 0px;
+        display: none;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header nav ul li a, header nav ul li a:hover, header nav ul li a.active{
+        color: #FFF;
+        text-align: right;
+        font-family: 'gotham_medium';
+        display: block;
+        background: none !important;
+        padding-left: 49px;
+
+    }
+
+    header nav ul li .languages{
+        padding-right: 24px;
+    }
+
+    header nav ul li .languages a {
+        display: inline-block;
+        float: right;
+        padding: 0px;
+        margin-left: 10px;
+        font-family: 'gotham_medium';
+        color: #FFF;
+    }
+
+    header nav ul li .languages a.active{
+        text-decoration: underline !important;    
+    }
+
+    .bx-wrapper .bx-viewport{
+        background: #004E6E;
+        -webkit-border-top-right-radius: 30px;
+        -moz-border-radius-topright: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: none;
+        border-top:0px; 
+
+    }
+
+
+    .bxslider li{
+       /* background: #004E6E;*/
+        height: 136px;
+        text-align: center;
+    }
+
+    .bxslider .caption {
+        font-size: 21px;
+        line-height: 35px;
+        margin-top: 120px;
+    }
+
+    .bxslider .btn {
+        font-size: 15px;
+    }
+
+    .who-we-are {
+        margin-bottom: 15px;
+        margin-right: 10px;
+        width: 92px;
+    }
+
+    .inner-container .who-we-are {
+        margin-top: 0;
+    }
+
+    .who-we-are img {
+        max-height: 86px; 
+    }
+
+    .what-we-do {
+        width: 95%;
+    }
+
+    .what-we-do li {
+     font-size: 13px;
+     padding: 5px 0;
+    }
+
+    .inner-container{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    footer .contact .go_top {
+        bottom: 58px;
+        height: 43px;
+        left: 48px;
+        width: 45px;
+    }
+    
+    footer .contact .privacity {
+        bottom: -12px;
+        color: #fff;
+        display: block;
+        height: 66px;
+        position: absolute;
+        right: 192px;
+        width: 141px;
+    }
+
+    /************************************* PAGES ***************/
+
+    h1.title-page{
+        margin: 20px 0;
+        font-size: 22px;
+    }
+
+    .description , .box-inner-info { font-size: 14px; }
+    .description ,  h1.title-page { padding: 0px 15px !important; }
+    .box-inner-info { min-height: inherit !important; }
+    .box2 {  font-size: 18px; }
+    .box1 { font-size: 21px; }
+}
+
+ 
+@media( max-width:768px )  and (orientation: landscape) {
+
+    .bxslider li{
+        height: 250px;
+    }
+
+     
+
+}
