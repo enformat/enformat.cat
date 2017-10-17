@@ -57,7 +57,7 @@
     }
 
     header nav ul li  a {
-        padding: 10px 15px; //23px;
+        padding: 10px 15px; /*23px;*/
         text-decoration: none;
         color: inherit;
         text-align: center;
@@ -503,7 +503,7 @@ h1.title-page{
 
     header nav ul li .languages a {
         display: inline-block;
-        float: right;
+        /*float: right;*/
         padding: 0px;
         margin-left: 10px;
         font-family: 'gotham_medium';
