@@ -1,10 +1,19 @@
+"use strict";
+
 var express      = require('express');
 var path         = require('path');
 var favicon      = require('serve-favicon');
 var logger       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
-var nodemailer   = require('nodemailer');
+var sendmail   = require('sendmail')({
+                          logger: {
+                            debug: console.log,
+                            info: console.info,
+                            warn: console.warn,
+                            error: console.error
+                          },
+                          silent: false});
 
 var routes = require('./routes/index');
 
@@ -33,30 +42,22 @@ app.post('/index', function(req, res){
     console.dir(req.body);
     
     if (req.body.action_contact == 1){
-    
-    var smtpTransport = nodemailer.createTransport('smtps://info@enformat.cat:no-pwd@smtp.gmail.com');
-        
-      var msg = 'Nombre :<b>' + req.body.Name+'</b><br />'+
+           
+      var msg = 'Name :<b>' + req.body.Name+'</b><br />'+
                 'Email :<b>' + req.body.Email+'</b><br />'+
-                'Telefono :<b>' + req.body.Telephone+'</b><br />'+
-                'Mesaje :<b>' + req.body.Message+'</b>'
+                'Phone :<b>' + req.body.Telephone+'</b><br />'+
+                'Message :<b>' + req.body.Message +'</b>';
         
-      var mailOptions = {
-        from: "info@enformat.cat", // sender address
-    	to: 'enricfj@gmail.com', // list of receivers
-    	subject: "Contacto desde la Web", // Subject line
+      sendmail({
+        from: "no-reply@enformat.cat", // sender address
+    	to: 'info@enformat.cat', // list of receivers
+    	subject: "Contact from website", // Subject line
     	html: msg // html body
-      }
-
-       smtpTransport.sendMail(mailOptions, function(error, response){
-            if(error){
-                   res.send("ocurrio un error, intentalo mas tarde");
-        	}else{
-        	       res.render('contacto', { title: 'ENFORMAT - Software Development' , 'nameUser': req.body.Name });
-        	}
-       });
+      }, function(err, reply) {
+        console.log(err && err.stack);
+        console.dir(reply);
+      });
    }
-     //res.end('ok');
 });
 
 // catch 404 and forward to error handler
