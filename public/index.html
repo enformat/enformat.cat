@@ -189,13 +189,13 @@
                   <div class="form-contact">
                         <h1>CONTACT</h1>
                          <form  id="contactForm" action="/contact" method="post">
-                            <!--<div id='recaptcha' class="g-recaptcha" data-sitekey="6LcM8DQUAAAAAIH_GoQnjk--ZDO2ANCnU61bAigm" data-callback="onSubmit" data-size="invisible"></div>-->
+                            <div id='recaptcha' class="g-recaptcha" data-sitekey="6LcM8DQUAAAAAIH_GoQnjk--ZDO2ANCnU61bAigm" data-callback="onSubmit" data-size="invisible"></div>
                             <input type="hidden" name="action_contact" id="action_contact" value="1" />
                             <input type="text" placeholder="Name" name="Name" />
                             <input type="text" placeholder="Email" name="Email" />
                             <input type="text" placeholder="Telephone" name="Telephone" />
                             <textarea name="Message" placeholder="Message" method="post" rows="8" form="contactForm"></textarea>
-                            <button class="g-recaptcha" data-sitekey="6LcM8DQUAAAAAIH_GoQnjk--ZDO2ANCnU61bAigm" id="submit">SEND</button>
+                            <button id="submit">SEND</button>
                          </form>
                   </div>
                   <a href="#top" class="jump go_top"></a>
@@ -203,11 +203,10 @@
             </div>
         </div>
      </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/enformat.js"></script>
   </body>
 </html>
