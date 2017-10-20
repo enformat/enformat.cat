@@ -6,7 +6,8 @@ var favicon      = require('serve-favicon');
 var logger       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
-var sendmail   = require('sendmail')({
+var https        = require('https');
+var sendmail     = require('sendmail')({
                           logger: {
                             debug: console.log,
                             info: console.info,
@@ -71,8 +72,8 @@ app.post('/contact', function(req, res){
    res.redirect(200, 'back');
 });
 
-var SECRET = "6LcM8DQUAAAAADxYIO2KLCPbBC-Dr4UE-tqZxY04";
 
+var SECRET = "6LcM8DQUAAAAADxYIO2KLCPbBC-Dr4UE-tqZxY04";
 // Helper function to make API call to recatpcha and check response
 function verifyRecaptcha(key, callback) {
         https.get("https://www.google.com/recaptcha/api/siteverify?secret=" + SECRET + "&response=" + key, function(res) {
